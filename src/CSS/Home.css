@@ -1,0 +1,42 @@
+
+
+      .whatsapp-icon {
+        position: fixed;
+        bottom: 20px; /* Distance from the bottom */
+        right: 20px; /* Distance from the right */
+        width: 60px; /* Size of the icon */
+        height: 60px;
+        background-color: #25D366; /* WhatsApp green */
+        border-radius: 50%; /* Circular shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+        cursor: pointer;
+        z-index: 1000; /* Ensures it's above other elements */
+    }
+
+    .whatsapp-icon img {
+        width: 35px; /* Icon size */
+        height: 35px;
+    }
+
+    .whatsapp-icon:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .scroller {
+        display: flex;
+        width: max-content;
+        animation: scroll-left 5s linear infinite;
+      }
+      
+      @keyframes scroll-left {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
